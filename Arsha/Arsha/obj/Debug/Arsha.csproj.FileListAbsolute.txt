@@ -21,3 +21,6 @@ C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.csp
 C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.dll
 C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.pdb
 C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\bin\MySql.Data.dll
+C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.Migrations.InitialCreate.resources
+C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\Arshawow\Arsha\Arsha\obj\Debug\Arsha.Migrations.AddDiscount.resources
