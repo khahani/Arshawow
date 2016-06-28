@@ -90,8 +90,7 @@ namespace Arsha.Controllers
             string[] senderNumbers = { System.Web.Configuration.WebConfigurationManager.AppSettings["SMS_Sender"] };
             string[] recipientNumbers = { user.Mobile };
             string bodyText = string.Format("گیم سرور آرشا - کلمه عبور: {0}", user.Password);
-            string[] messageBodies = { bodyText };
-            
+            string[] messageBodies = { bodyText };            
             
             ws.SendSMS(smsUsername, smsPassword, senderNumbers, recipientNumbers, messageBodies, null, null, null);
 
