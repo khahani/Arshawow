@@ -38,7 +38,7 @@ namespace Arsha.Controllers
         }
         [HttpPost]
         public ActionResult Register(string username, string firstname, string lastname, string password,
-            string mobile, string email)
+            string mobile, string email, string discount)
         {
 
             db.Users.Add(new User
@@ -49,7 +49,8 @@ namespace Arsha.Controllers
                     FirstName = firstname,
                     LastName = lastname,
                     Mobile = mobile,
-                    Email = email
+                    Email = email,
+                    Discount = discount
                 });
 
             db.SaveChanges();
@@ -90,10 +91,9 @@ namespace Arsha.Controllers
             string[] senderNumbers = { System.Web.Configuration.WebConfigurationManager.AppSettings["SMS_Sender"] };
             string[] recipientNumbers = { user.Mobile };
             string bodyText = string.Format("گیم سرور آرشا - کلمه عبور: {0}", user.Password);
-            string[] messageBodies = { bodyText };
+            string[] messageBodies = { bodyText };            
             
-            
-            ws.SendSMS(smsUsername, smsPassword, senderNumbers, recipientNumbers, messageBodies, null, null, null);
+            long[] result = ws.SendSMS(smsUsername, smsPassword, senderNumbers, recipientNumbers, messageBodies, null, null, null);
 
             return View("SendPassword");
         }

@@ -165,6 +165,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606281140277_InitialCreate.cs" />
+    <Compile Include="Migrations\201606281140277_InitialCreate.Designer.cs">
+      <DependentUpon>201606281140277_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606281416461_Add-Discount.cs" />
+    <Compile Include="Migrations\201606281416461_Add-Discount.Designer.cs">
+      <DependentUpon>201606281416461_Add-Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\SignupViewModel.cs" />
@@ -218,6 +227,14 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Arsha_ir_smsapp_v2</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606281140277_InitialCreate.resx">
+      <DependentUpon>201606281140277_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606281416461_Add-Discount.resx">
+      <DependentUpon>201606281416461_Add-Discount.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
